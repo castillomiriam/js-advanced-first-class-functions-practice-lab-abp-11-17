@@ -1,4 +1,12 @@
-drivers.forEach(logDriverNames(0,1,2,3,4){
-  console.log(drivers);
+function logDriverNames(drivers) {
+drivers.forEach(function(driver) {
+  console.log(driver.name);
+})
 }
-});
+
+
++function logDriverNames(drivers) {
+ +  drivers.forEach(function(driver) {
+ +    console.log(`${driver.name}`);
+ +  })
+ +}
