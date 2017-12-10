@@ -18,4 +18,10 @@ function driversByRevenue(drivers) {
     return a.revenue-b.revenue
  })
  }
- 
+
+ function driversByName(drivers) {
+   return array.slice().sort(function (a,b) {
+     return a.name.localeCompare(b.name)
+   })
+ }
+  
