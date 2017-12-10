@@ -1,14 +1,21 @@
 function logDriverNames(drivers) {
   drivers.forEach(function(driver) {
-  console.log(driver.name)
+   console.log(driver.name)
 })
 }
 
 
 function logDriversByHometown(drivers, hometown) {
  drivers.forEach(function(driver) {
- if (driver.hometown === hometown) {
- console.log(driver.name)
+  if (driver.hometown === hometown) {
+   console.log(driver.name)
  }
  })
  }
+
+function driversByRevenue(drivers) {
+  return drivers.slice().sort(function (a,b) {
+    return a.revenue-b.revenue
+ })
+ }
+ 
