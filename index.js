@@ -26,7 +26,8 @@ function driversByName(drivers) {
  }
 
 function totalRevenue(drivers) {
-  return drivers.slice().sort(function (a, b) {
-    return a.name.reduce.(b.name)
-})
-}
+  return drivers.reduce(function (agg, el, i, arr) {
+    return agg+driver.revenue 
+ }, 0)
+ }
+
